@@ -1,0 +1,78 @@
+body {
+  background-image: url("/src/images/noaa.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+* {
+  color: white;
+}
+
+.title-name {
+  margin-top: 7ch;
+  margin-bottom: 4ch;
+  font-size: 70px;
+}
+
+.search {
+  margin-bottom: 5ch;
+  
+}
+
+.search-bar {
+  border-radius: 8px;
+  margin-right: 1ch;
+  background: darkslategrey;
+  font-size: 205%;
+  border: none;
+  outline: none;
+  height: 60px;
+  width: 25ch;
+
+}
+
+button:hover {
+  background: #282828;
+  outline: none;
+}
+
+
+
+.button {
+  border-radius: 8px;
+  margin-left: 1ch;
+  background: darkgray;
+  width: 120px;
+  outline: none;
+  border: none;
+  font-size: 170%;
+  font-weight: bolder;
+}
+
+.city {
+  margin-bottom: 5ch;
+}
+
+.temp {
+  margin-bottom: 3ch;
+  font-size: 70px;
+}
+
+.icon {
+  margin-bottom: auto;
+  
+}
+
+.description {
+  margin-bottom: 2ch;
+  font-size: 40px;
+}
+.humidity {
+  margin-bottom: 2ch;
+  font-size: 40px;
+}
+
+.wind {
+    font-size: 40px;
+}
