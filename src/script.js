@@ -1,6 +1,6 @@
 let weather = {
   // API key used to retreive data from database
-  apiKey: "",
+  apiKey: "(API KEY GOES HERE)",
   fetchWeather: function (city) {
     // FAtching the data from the api
     fetch(
@@ -25,23 +25,23 @@ let weather = {
     // require("dotenv").config();
 
     document.querySelector(".city").innerText = "Weather in " + name;
+
     document.querySelector(".icon").src =
       "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+
     document.querySelector(".description").innerText = description;
 
-    // Rounds the decimal up to the nearest interger
+    // Rounds the decimal up to the nearest interger Math.round
 
     document.querySelector(".temp").innerText = Math.round(temp) + "°F";
 
     document.querySelector(".humidity").innerText =
       "Humidity: " + humidity + "%";
+
     document.querySelector(".wind").innerText =
       "Wind speed: " + Math.round(speed) + " mph";
+
     document.querySelector(".weather").classList.remove("loading");
-
-
-
-
   },
   search: function () {
     this.fetchWeather(document.querySelector(".search-bar").value);
@@ -54,6 +54,7 @@ document.querySelector(".search button").addEventListener("click", function () {
 
 document
   .querySelector(".search-bar")
+
   .addEventListener("keyup", function (event) {
     if (event.key == "Enter") {
       weather.search();
