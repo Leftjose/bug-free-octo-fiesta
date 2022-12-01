@@ -1,6 +1,6 @@
 let weather = {
   // API key used to retreive data from database
-  apiKey: "(API KEY GOES HERE)",
+  apiKey: "7c497cd6ed3b38c0cd124056c228c9dc",
   fetchWeather: function (city) {
     // FAtching the data from the api
     fetch(
